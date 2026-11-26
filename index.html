@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang web</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- explore__size-img -->
+    <!-- 
+    cấu trúc web
+    header(1,2)
+    1.navbar: thành tìm kiếm, đăng...
+    2.banner: tiêu đề, mô tả ,....
+    3.Features Bar: cam kết thương hiệu
+    4.Khối giới thiệu
+    5.khối phân loại Catalog
+    6.Furniture with a Future
+    7.FAQ Section (Câu hỏi thường gặp)
+    8.footer: 
+    -->
+    <!-- star -->
+     <!-- ẩn nền của header -->
+    <header id="header">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar--dark custom-navbar" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div>
+            <img src="images/logo.png" alt="logo" class="navbar__logo" />
+            <a class="navbar-brand" href="#">Modiee</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar__list">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Funiture</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hattrheses</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Home Oeoco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Collections</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-sbi bi-search m-auto"></i>
+              <i class="bi bi-bell m-auto"></i>
+              <div>
+                <a href="" class="button btn--login">Log in</a>
+              </div>
+
+              <div class="d-flex">
+                <a href="" class="button btn--signup"
+                  >Sign Up
+                  <i class="bi bi-chevron-right btn__icon btn__icon--dark"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- slide -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      <div class="carousel-inner">
+        <!-- slide1 -->
+        <div class="carousel-item active ">
+          <img src="images/gallery/anh1.jpg" class="d-block w-100 height-slide" alt="slide1">
+          <div class="slide-overlay"></div>
+          <div class="carousel-caption d-none d-md-block ">
+            <h1>First slide label</h1>
+            <p>Some representative placeholder content for the first slide. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, blanditiis. </p>
+          </div>
+        </div>
+        <!-- slide2 -->
+        <div class="carousel-item  ">
+          <img src="images/gallery/anh3.jpg" class="d-block w-100 height-slide" alt="slide1">
+          <div class="slide-overlay"></div>
+          <div class="carousel-caption d-none d-md-block ">
+            <h1>Second slide label</h1>
+            <p>Some representative placeholder content for the first slide. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, blanditiis. </p>
+          </div>
+        </div>
+        <!-- slide3 -->
+        <div class="carousel-item  ">
+          <img src="images/gallery/anh5.png" class="d-block w-100 height-slide" alt="slide1">
+          <div class="slide-overlay"></div>
+          <div class="carousel-caption d-none d-md-block ">
+            <h1>Third slide label</h1>
+            <p>Some representative placeholder content for the first slide. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, blanditiis. </p>
+          </div>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
+      <!-- nút bấm -->
+      <div class="button-header">
+        <a href="#" class="button btn--light "
+          >Shop Now
+          <i
+            class="bi bi-chevron-right bg-dark text-white rounded-circle p-1"
+          ></i
+        ></a>
+        <a href="" class="button btn--dark  ms-3"
+          >Explore More</a
+        >
+      </div>
+      <!-- end nút bấm -->
+      
+      
+    </header>
+    <!-- cam kết, dùng section -->
+    <section class="commitment">
+      <div class="commitment__container">
+        <div>
+          <i class="bi bi-shield-fill-check"></i><span> Rest Quality</span>
+        </div>
+        <div>
+          <i class="bi bi-shield-fill-check"></i><span> CEIT Support</span>
+        </div>
+
+        <div>
+          <i class="bi bi-shield-fill-check"></i
+          ><span> Contom Options Available</span>
+        </div>
+
+        <div>
+          <i class="bi bi-shield-fill-check"></i><span> Fast Shipping</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story & Gallery -->
+    <section class="gallery">
+      <!-- d1 -->
+      <div class="row d-flex justify-content-around">
+        <div class="col gallery__no-pad">
+          <h2 class="fw-bold">Crafted for Comfort.</h2>
+          <h2 class="fw-bold">Designed for Life.</h2>
+        </div>
+        <p class="col gallery__description gallery__no-pad">
+          All timalce, anilstions your space et seat tst/ nanz zothy. There only
+          ear 'a, war Den etfia on extraat uvrou axmitortz, urié furniteri
+          naie's with ma'atent toruliabta and a ponotar for design. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Doloribus, dolorum.
+        </p>
+      </div>
+      <!-- d2 -->
+      <div class="row">
+        <!-- cột1  -->
+         <div class="col-lg-5 gallery__card--img1 img-card mb-2 mb-lg-0">
+          <div class="card-content">
+            <p class="m-0">Hand wofted quality</p>
+            <i
+              class="bi bi-arrow-up-right btn__icon btn__icon--light icon--center"
+            ></i>
+        </div>
+      </div>
+        
+        <!-- cột2 -->
+        <div class="col-lg-7">
+          <!-- hang1 -->
+          <div class="row pb-2 ms-2">
+            <div class="col-6 p-0">
+              <div class="img-card gallery__card--img2">
+                <div class="card-content">
+                  <p class="m-0">100 Day ....</p>
+                  <i
+                    class="bi bi-arrow-up-right btn__icon btn__icon--light icon--center"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 pe-0 ps-3">
+              <div class="img-card gallery__card--img3">
+                <div class="card-content">
+                  <p class="m-0">Karcometue ...</p>
+                  <i
+                    class="bi bi-arrow-up-right btn__icon btn__icon--light icon--center"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- hàng2 -->
+          <div class="row flex-grow-1 ms-2">
+            <div class="col p-0">
+              <div class="img-card gallery__card--img4">
+                <div class="card-content">
+                  <p class="m-0">100 Day ....</p>
+                  <i
+                    class="bi bi-arrow-up-right p-0 m-0 btn__icon btn__icon--light icon--center"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- card explore -->
+    <section class="explore">
+      <!-- hàng1 -->
+      <div class="text-center">
+        <h3>Explore New Collection</h3>
+        <p class="w-75 mx-auto">
+          Темя your surnipiton uitd ler gert kitiing feotuoot ecaides, snnoge
+          and ekpceisss seacota, ixy ic saids colicstinng me coldn cr confyaa
+          ent your firatavo, and your kfing onnge.
+        </p>
+      </div>
+
+      <!-- hàng2 -->
+      <div class="row explore__card">
+        <!-- card 1 -->
+        <div
+          class="col-lg-4  explore__size-img explore__position-content mb-3 mx-auto"
+        >
+          <!-- ảnh -->
+          <img
+            src="images/explore/ghe-tron.png"
+            alt="ghe-dai "
+            class="img-fluid "
+          />
+          <!-- Khối chữ đè lên góc trên của ảnh -->
+          <div class="explore__header explore-content">
+            <h5 class="fw-bold mb-1">Rounded Sofa</h5>
+            <p class="mb-0"><i class="bi bi-cart-fill fs-2"></i></p>
+          </div>
+          <!-- Khối chữ đè lên góc dưới của ảnh -->
+          <div class="footer-content explore-content">
+            <h5 class="fw-bold my-auto">Price: $499</h5>
+            <a href="" class="button btn--dark"
+              >Buy Now
+              <i class="bi bi-arrow-up-right btn__icon btn__icon--light"></i>
+            </a>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="col-4 explore__size-img  explore__position-content mb-3 mx-auto"
+        >
+          <!-- ảnh -->
+          <img
+            src="images/explore/sofa-khongchan.png"
+            alt="sofa-khongchan "
+            class="img-fluid"
+          />
+          <!-- Khối chữ đè lên góc trên của ảnh -->
+          <div class="explore__header explore-content">
+            <h5 class="fw-bold mb-1">Rounded Sofa</h5>
+            <p class="mb-0"><i class="bi bi-cart-fill fs-2"></i></p>
+          </div>
+          <!-- Khối chữ đè lên góc dưới của ảnh -->
+          <div class="footer-content explore-content">
+            <h5 class="fw-bold my-auto">Price: $499</h5>
+            <a href="" class="button btn--dark"
+              >Buy Now
+              <i class="bi bi-arrow-up-right btn__icon btn__icon--light"></i>
+            </a>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col-4 explore__size-img explore__position-content mb-3 mx-auto">
+          <!-- ảnh -->
+          <img
+            src="images/explore/sofa-tron.png"
+            alt="sofa tròn "
+            class="img-fluid"
+          />
+          <!-- Khối chữ đè lên góc trên của ảnh -->
+          <div class="explore__header explore-content">
+            <h5 class="fw-bold mb-1">Rounded Sofa</h5>
+            <p class="mb-0"><i class="bi bi-cart-fill fs-2"></i></p>
+          </div>
+          <!-- Khối chữ đè lên góc dưới của ảnh -->
+          <div class="footer-content explore-content">
+            <h5 class="fw-bold my-auto">Price: $499</h5>
+            <a href="" class="button btn--dark"
+              >Buy Now
+              <i class="bi bi-arrow-up-right btn__icon btn__icon--light"></i>
+            </a>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="col-4 explore__size-img explore__position-content mb-3 mx-auto">
+          <!-- ảnh -->
+          <img
+            src="images/explore/ghe-tron.png"
+            alt="ghe-dai "
+            class="img-fluid"
+          />
+          <!-- Khối chữ đè lên góc trên của ảnh -->
+          <div class="explore__header explore-content">
+            <h5 class="fw-bold mb-1">Rounded Sofa</h5>
+            <p class="mb-0"><i class="bi bi-cart-fill fs-2"></i></p>
+          </div>
+          <!-- Khối chữ đè lên góc dưới của ảnh -->
+          <div class="footer-content explore-content">
+            <h5 class="fw-bold my-auto">Price: $499</h5>
+            <a href="" class="button btn--dark"
+              >Buy Now
+              <i class="bi bi-arrow-up-right btn__icon btn__icon--light"></i>
+            </a>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="col-4 explore__size-img explore__position-content mb-3 mx-auto">
+          <!-- ảnh -->
+          <img
+            src="images/explore/ghe-tron.png"
+            alt="ghe-dai "
+            class="img-fluid"
+          />
+          <!-- Khối chữ đè lên góc trên của ảnh -->
+          <div class="explore__header explore-content">
+            <h5 class="fw-bold mb-1">Rounded Sofa</h5>
+            <p class="mb-0"><i class="bi bi-cart-fill fs-2"></i></p>
+          </div>
+          <!-- Khối chữ đè lên góc dưới của ảnh -->
+          <div class="footer-content explore-content">
+            <h5 class="fw-bold my-auto">Price: $499</h5>
+            <a href="" class="button btn--dark"
+              >Buy Now
+              <i class="bi bi-arrow-up-right btn__icon btn__icon--light"></i>
+            </a>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="col-4 explore__size-img explore__position-content mb-3 mx-auto">
+          <!-- ảnh -->
+          <img
+            src="images/explore/ghe-tron.png"
+            alt="ghe-dai "
+            class="img-fluid"
+          />
+          <!-- Khối chữ đè lên góc trên của ảnh -->
+          <div class="explore__header explore-content">
+            <h5 class="fw-bold mb-1">Rounded Sofa</h5>
+            <p class="mb-0"><i class="bi bi-cart-fill fs-2"></i></p>
+          </div>
+          <!-- Khối chữ đè lên góc dưới của ảnh -->
+          <div class="footer-content explore-content">
+            <h5 class="fw-bold my-auto">Price: $499</h5>
+            <a href="" class="button btn--dark"
+              >Buy Now
+              <i class="bi bi-arrow-up-right btn__icon btn__icon--light"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- card furniture -->
+    <section class="furniture cart-st mt-5 py-5">
+      <div class="text-center">
+        <h2>Furniture with a Future</h3>
+        <p class="w-75 mx-auto text-black-50">
+          Insanaadoitrine Maléo snartacus inftonte atnesa, mensatioue
+          Meodaivn.aeroereraalta Vienardo signals Mamasa sisi wa somos
+          caminavarene for aorgaraziera, entors
+        </p>
+      </div>
+      <!--start card -->
+      <div class="row d-flex justify-content-lg-between justify-content-center ">
+        <!-- card 1 -->
+        <div class="col-lg-4 explore__size-img position-relative  p-lg-0  mb-3">
+          <!-- ảnh -->
+          <img
+            src="images/gallery/anh5.png"
+            alt="anh5"
+            class="img-fluid rounded-4"
+          />
+
+          <!-- Khối chữ đè lên góc dưới của ảnh -->
+          <div
+            class="footer-content w-100 px-3 text-center text-black"
+          >
+            <p class="text-white">Lorem, ipsum.</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col-lg-4 explore__size-img position-relative  p-lg-0 mb-3">
+          <!-- ảnh -->
+          <img
+            src="images/gallery/anh5.png"
+            alt="anh5"
+            class="img-fluid rounded-4"
+          />
+
+          <!-- Khối chữ đè lên góc dưới của ảnh -->
+          <div
+            class="footer-content w-100 px-3 text-center text-black"
+          >
+            <p class="text-white">Lorem, ipsum.</p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col-lg-4 explore__size-img position-relative p-lg-0 mb-3">
+          <!-- ảnh -->
+          <img
+            src="images/gallery/anh5.png"
+            alt="anh5"
+            class="img-fluid rounded-4"
+          />
+
+          <!-- Khối chữ đè lên góc dưới của ảnh -->
+          <div
+            class="footer-content w-100 px-3 text-center text-black"
+          >
+            <p class="text-white">Lorem, ipsum.</p>
+          </div>
+        </div>
+        
+      </div>
+    
+
+    </section>
+    <!-- câu hỏi thường gặp -->
+    <div class="question px-5 m-5 pb-5">
+      <div>
+        <h2>
+          <span class="fw-bold fs-1">Frequently</span>
+          <span class="text-muted fw-bold fs-1">Asked</span>
+        </h2>
+        <h2 class="text-muted fw-bold fs-1">Questions?</h2>
+      </div>
+      <!-- câu hỏi: dạng Accordion -->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <!-- câu1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed px-0 fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae et quas quasi minus asperiores soluta.?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body px-0 small">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              first item’s accordion body. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Officiis accusamus cumque recusandae
+              velit consequatur unde reiciendis culpa quam hic perspiciatis nam
+              aspernatur, iste fugiat aliquid, sit delectus veritatis eveniet
+              dolores. Corporis porro eveniet mollitia expedita eius, animi
+              delectus non vero laborum qui eligendi recusandae iste atque nobis
+              illum voluptatum aspernatur? Quibusdam, unde. Voluptate architecto
+              ad amet excepturi! Nobis, quis minima?
+            </div>
+          </div>
+        </div>
+        <!-- câu2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed px-0 fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae et quas quasi minus asperiores soluta.?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body px-0 small">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              first item’s accordion body. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Officiis accusamus cumque recusandae
+              velit consequatur unde reiciendis culpa quam hic perspiciatis nam
+              aspernatur, iste fugiat aliquid, sit delectus veritatis eveniet
+              dolores. Corporis porro eveniet mollitia expedita eius, animi
+              delectus non vero laborum qui eligendi recusandae iste atque nobis
+              illum voluptatum aspernatur? Quibusdam, unde. Voluptate architecto
+              ad amet excepturi! Nobis, quis minima?
+            </div>
+          </div>
+        </div>
+        <!-- câu3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed px-0 fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae et quas quasi minus asperiores soluta.?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body px-0 small">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              first item’s accordion body. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Officiis accusamus cumque recusandae
+              velit consequatur unde reiciendis culpa quam hic perspiciatis nam
+              aspernatur, iste fugiat aliquid, sit delectus veritatis eveniet
+              dolores. Corporis porro eveniet mollitia expedita eius, animi
+              delectus non vero laborum qui eligendi recusandae iste atque nobis
+              illum voluptatum aspernatur? Quibusdam, unde. Voluptate architecto
+              ad amet excepturi! Nobis, quis minima?
+            </div>
+          </div>
+        </div>
+        <!-- câu4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed px-0 fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae et quas quasi minus asperiores soluta.?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body px-0 small">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              first item’s accordion body. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Officiis accusamus cumque recusandae
+              velit consequatur unde reiciendis culpa quam hic perspiciatis nam
+              aspernatur, iste fugiat aliquid, sit delectus veritatis eveniet
+              dolores. Corporis porro eveniet mollitia expedita eius, animi
+              delectus non vero laborum qui eligendi recusandae iste atque nobis
+              illum voluptatum aspernatur? Quibusdam, unde. Voluptate architecto
+              ad amet excepturi! Nobis, quis minima?
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- nút chuyển trang -->
+      <div class="mt-4 ps-5">
+        <a href="" class="btn btn-dark rounded-pill fs-5"
+          >Buy Now
+          <i
+            class="bi bi-arrow-up-right bg-white text-black rounded-circle p-1"
+          ></i>
+        </a>
+      </div>
+    </div>
+    <!-- footer: main content, sub footer -->
+    <footer class="footer footer--white">
+      <!-- main section -->
+      <div class="row footer__column d-flex justify-content-between">
+        <div class="col-4">
+          <h3>Stay Connected</h3>
+          <p class="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+          </p>
+          <a href="" class="btn btn-light rounded-pill"
+            >Lorem, ipsum.
+            <i
+              class="bi bi-chevron-right bg-dark text-white rounded-circle p-1"
+            ></i>
+          </a>
+        </div>
+        <div class="col-2">
+          <h4>Collection</h4>
+          <ul class="list-unstyled">
+            <li>Stec</li>
+            <li>Terons</li>
+            <li>Thachs</li>
+            <li>Rnbe</li>
+            <li>Aoaus</li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h4>Company</h4>
+          <ul class="list-unstyled">
+            <li>About Yuahtioie</li>
+            <li>About Us</li>
+            <li>CWmem</li>
+            <li>Fhusn Aitaisce</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h4>Customer Service</h4>
+          <ul class="list-unstyled">
+            <li>Feosa And Dandoy</li>
+            <li>Desqier & Cboauncos</li>
+            <li>Deyive Toatiting</li>
+            <li>Parahortios</li>
+            <li>Aontact is</li>
+          </ul>
+        </div>
+      </div>
+      <!-- sub section -->
+      <div class="row ms-1 py-5">
+        <div class="col-9">
+          <i class="bi bi-c-circle"></i
+          ><span> 2024 Modioa All Rghts Reserved.</span>
+        </div>
+        <div class="col-3">
+          <div class="d-flex justify-content-start gap-4">
+            <h6>Follow is line:</h6>
+            <!-- icon -->
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-pinterest"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
